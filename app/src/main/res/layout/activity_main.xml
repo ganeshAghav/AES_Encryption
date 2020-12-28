@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:text="Key"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colBlack"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edt_key"
+            android:textSize="12dp"
+            android:textColor="@color/colBlack"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:imeOptions="actionNext"
+            android:background="@drawable/border_edit_curv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:text="Decryption Data"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colBlack"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edt_decryptionData"
+            android:textSize="12dp"
+            android:textColor="@color/colBlack"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:inputType="text|textMultiLine"
+            android:lines="8"
+            android:maxLines="20"
+            android:minLines="4"
+            android:importantForAutofill="no"
+            android:imeOptions="actionNext"
+            android:background="@drawable/border_edit_curv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:text="Encryption Data"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colBlack"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edt_encryptionData"
+            android:textSize="12dp"
+            android:textColor="@color/colBlack"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:inputType="text|textMultiLine"
+            android:lines="8"
+            android:maxLines="20"
+            android:minLines="4"
+            android:importantForAutofill="no"
+            android:imeOptions="actionNext"
+            android:background="@drawable/border_edit_curv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:layout_weight="1"
+           android:id="@+id/btn_clear"
+           android:text="Clear"
+           android:textAllCaps="false"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"/>
+
+       <Button
+           android:layout_weight="1"
+           android:id="@+id/btn_showResult"
+           android:text="Show Result"
+           android:textAllCaps="false"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"/>
+   </LinearLayout>
+
+</LinearLayout>
